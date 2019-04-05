@@ -206,7 +206,7 @@ public class SegmentPlugin extends CordovaPlugin {
 
     private void screen(JSONArray args) {
 
-        JSONObject contextObj = args.optJSONObject(3);
+        JSONObject contextObj = args.optJSONObject(2);
 
         AnalyticsContext analyticsContext = analytics.getAnalyticsContext();
         analyticsContext = enrichAnalyticsContext(analyticsContext, contextObj);
